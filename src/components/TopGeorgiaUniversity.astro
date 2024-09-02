@@ -1,0 +1,73 @@
+
+---
+import { Image } from "astro:assets";
+import universityWesternAus from "@assets/img/ilia-state-university.png";
+import universityQueensland from "@assets/img/universitylogo1.png";
+import universitySaouthWales from "@assets/img/country-img/uni/Unicanada3.jpg";
+import melburnAustralia from "@assets/img/country-img/uni/Unicanada4.jpg";
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 mb-4">
+        <h2>Top Universities in GEORGIA</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityWesternAus} class="card-img-top mb-3 px140" alt="The University of Melbourne" />
+
+            <p class="oswald h5 card-title">
+                Tbilisi State Medical University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universityQueensland} class="card-img-top mb-3 px140" alt="The University of Queensland" />
+
+            <p class="oswald h5 card-title">UNIVERSITY OF GEORGIA TABILISI</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={melburnAustralia} class="card-img-top mb-3 px140" alt="The University of New South Wales" />
+
+            <p class="oswald h5 card-title">ILIA STATE UNIVERSITY TBILISI</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-6 mb-4">
+        <div class="card university-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <!-- <span class="badge badge-success">FastLane</span> -->
+              <i class="far fa-heart"></i>
+            </div>
+            <Image src={universitySaouthWales} class="card-img-top mb-3 px140" alt="University of Western Australia" />
+
+            <p class="oswald h5 card-title">GEORGIAN NATIONAL UNIVERSITY </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

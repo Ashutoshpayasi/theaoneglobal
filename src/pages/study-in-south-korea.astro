@@ -1,0 +1,54 @@
+---
+import Image from "astro/components/Image.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "@components/CTA.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TopSouthKoreaCourses from "@components/TopsouthkoreaCourses.astro";
+import WhyChooseKorea from "@components/WhyChooseKorea.astro";
+import TopCountries from "../components/TopCountries.astro";
+import SouthKoreaContent from "@components/SouthKoreaContent.astro";
+import OurPartners from "@components/OurPartners.astro";
+import Intake from "@components/Intakes.astro";
+import FAQCopy3 from "@components/Faq_south_korea.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Contact from "@components/Contact.astro";
+import LifeInSouthKorea from "@components/Life_in_South_Korea.astro";
+import TabComponentSouthKorea from "@components/TabcomponentSouthKorea.astro";
+import AboutSouthKorea from "@components/Facts.astro";
+// images
+import pageBannerImg from "@assets/img/country-img/south-korea-banner.avif";
+import Topusuniversities from "@components/TopUnivercitiesinsouthKorea.astro";
+
+const pageTitle = "Study in South Korea - Top Colleges, Fees Guide for Indian Students | Aone Global"; 
+const pageDescription = "Planning to Study in the USA takes help from Trusted USA education consultants at A One Global. Receive personalized guidance for studying in the United States.";
+const pageKeywords = "";
+const pageAuthor = "";
+const pageBanner = { url: pageBannerImg.src };
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title="Study in South Korea" banner={pageBanner} />
+    
+    <SouthKoreaContent />
+    <div class="section-divider"></div>
+
+    <TopSouthKoreaCourses />
+    <AboutSouthKorea/>
+    <!-- <CTA /> -->
+    <div class="section-divider"></div>
+
+    <Topusuniversities />
+    
+    <WhyChooseKorea />
+    <LifeInSouthKorea />
+    <TabComponentSouthKorea />
+    <Intake/>
+    <FAQCopy3 />
+    <Testimonials />
+    <TopCountries />
+    <OurPartners />
+    <Contact />
+  </main>
+</MainLayout>

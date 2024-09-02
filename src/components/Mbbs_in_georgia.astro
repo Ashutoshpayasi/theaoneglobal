@@ -1,0 +1,63 @@
+---
+import Image from "astro/components/Image.astro";
+import mbbsImg from "@assets/img/mbbs.jpg";
+import GeorgiaImg from "@assets/img/GeorgiaImg2.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+
+            <h2 class="united-states__title mb-15">MBBS IN GEORGIA: Eligibility, Colleges, Fees, and Examinations</h2>
+
+            <p>
+                Georgia has emerged as a prominent destination for pursuing an MBBS degree, offering high-quality education
+                 with globally recognized degrees. Renowned medical universities in Georgia attract students from around the world due to their modern facilities, experienced faculty, and affordable tuition fees.
+            </p>
+            <p>
+                A degree in MBBS from Georgia opens doors to diverse career opportunities in medicine, including specialization, research, and healthcare administration. Graduates often 
+                find themselves well-prepared for competitive residency programs globally.
+            </p>
+
+            <p>
+                Embark on your journey towards becoming a skilled medical professional with MBBS in Georgia. Explore the rich cultural heritage of Georgia while receiving top-notch medical education that sets you on a path to success in the field of medicine.
+            </p>
+    
+
+          </div>
+         
+        </div>
+        <div class="col-6">
+          <Image src={GeorgiaImg} alt="Australia Image" width="600" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

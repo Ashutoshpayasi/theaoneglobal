@@ -1,0 +1,62 @@
+---
+import Image from "astro/components/Image.astro";
+import mbbsImg from "@assets/img/mbbs.jpg";
+import MbbsRussiaImg from "@assets/img/MBBS-in-Russia.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+
+            <h2 class="united-states__title mb-15">ABOUT MBBS IN RUSSIA</h2>
+
+           <p>
+            Exploring the option of pursuing an MBBS in Russia reveals a pathway to 
+            a prestigious medical education recognized worldwide. Russia is known for its strong emphasis on research and practical training in the medical field, with its universities consistently ranking among the top in the world. The country offers an affordable education system, with tuition fees and living costs being considerably lower than in many other countries,
+             making it an attractive choice for international students.
+           </p>
+            <p>
+                Russian medical universities provide English-medium programs, ensuring that 
+                language is not a barrier for international students. Additionally, students benefit from extensive clinical practice, which is integrated into the curriculum from the early years of study. The global recognition of a Russian MBBS degree allows graduates to pursue medical careers in various countries, 
+                including the US, UK, and Europe, after passing the necessary licensing exams.
+            </p>
+
+      
+
+          </div>
+         
+        </div>
+        <div class="col-6">
+          <Image src={MbbsRussiaImg} alt="Australia Image" width="600" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

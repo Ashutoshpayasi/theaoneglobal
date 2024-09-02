@@ -1,0 +1,68 @@
+---
+import Image from "astro/components/Image.astro";
+import mbbsImg from "@assets/img/mbbs.jpg";
+import GeorgiaImg from "@assets/img/Georgia3.jpg";
+---
+
+<section>
+  <div class="united-stats-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+            <Image src={GeorgiaImg} alt="Australia Image" width="600" />
+          </div>
+        <div class="col-6">
+          <div class="united-states">
+            <style>
+              .text-center {
+                text-align: center !important;
+              }
+
+              .tab-pane {
+                display: none;
+              }
+              .tab-pane.active {
+                display: block;
+              }
+              .nav-tabs {
+                flex-direction: column;
+              }
+              .nav-tabs .nav-link {
+                border: 1px solid #dee2e6;
+                border-radius: 0.25rem;
+                margin-bottom: 0.5rem;
+              }
+              .nav-tabs .nav-link.active {
+                background-color: #007bff;
+                color: white;
+              }
+            </style>
+
+            <h2 class="united-states__title mb-15">ADVANTAGES MBBS IN GEORGIA</h2>
+
+           <p>
+            Pursuing an MBBS in Georgia offers numerous advantages that make it an
+             attractive option for aspiring medical students. Georgia is home to several
+              top-ranked medical universities recognized by international bodies such as the WHO and UNESCO, 
+            ensuring that students receive a high standard of education. 
+           </p>
+            <p>
+                The affordability of tuition fees, compared to many Western countries, 
+                makes it a cost-effective choice without compromising on quality.
+                 Additionally, the availability of English-medium programs eliminates language barriers, making it accessible to a global student population. Students benefit from extensive clinical exposure, gaining practical
+                 experience in well-equipped hospitals and medical centers.
+            </p>
+
+            <p>
+                Furthermore, the degrees awarded by Georgian universities are globally recognized, allowing graduates to pursue medical careers in various countries, including the US and Europe. Overall, studying MBBS in Georgia provides a blend of high-quality education, international recognition, and an enriching cultural experience.
+            </p>
+
+            
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
